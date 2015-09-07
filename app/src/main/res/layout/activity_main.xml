@@ -34,7 +34,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#000000"
-            android:layout_margin="1dp">
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -78,9 +81,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#000000"
-            android:layout_margin="1dp"
             android:orientation="vertical"
-            android:id="@+id/">
+            android:id="@+id/"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp">
 
             <TextView
                 android:layout_width="match_parent"
