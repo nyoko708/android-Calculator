@@ -4,7 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.*;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -34,5 +35,46 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void numberOnClick(View view) {
+        int num = 0;
+        switch(view.getId()) {
+            case R.id.one:
+                num = 1;
+                break;
+            case R.id.two:
+                num = 2;
+                break;
+            case R.id.three:
+                num = 3;
+                break;
+            case R.id.four:
+                num = 4;
+                break;
+            case R.id.five:
+                num = 5;
+                break;
+            case R.id.six:
+                num = 6;
+                break;
+            case R.id.seven:
+                num = 7;
+                break;
+            case R.id.eight:
+                num = 8;
+                break;
+            case R.id.nine:
+                num = 9;
+                break;
+            case R.id.zero:
+                num = 0;
+                break;
+            default:
+                num = 0;
+        }
+
+        String strNum = String.valueOf(num);
+        Toast.makeText(getApplicationContext(), strNum, Toast.LENGTH_SHORT).show();
     }
 }
